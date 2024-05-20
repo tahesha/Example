@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<style>
+h1{
+    text-align: center;
+    color: purple;
+}
+p{
+    color: blueviolet;
+    font-size: 60px;
+}
+    
+</style>
+<body>
+<h1>My JavaScript Modules Example</h1>
+<p id="demo"></p>
+<script type="module">
+import { name, age } from "./person.js";
+let myIntro = "My name is " + name + ", I am " + age + ".";
+document.getElementById("demo").innerHTML = myIntro;
+</script>
+</body>
+</html>
